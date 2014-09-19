@@ -23,5 +23,11 @@ module.exports.policies = {
 
     AuthController: {
         '*':    ['passport']
+    },
+    
+    UserController: {
+        // 'create': true,
+        // 'index':true
+        "*": true
     }
 };

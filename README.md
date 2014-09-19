@@ -1,4 +1,11 @@
-# Boilerplate for AngularJS + Sails.js
+# Boilerplate for AngularJS + Sails.js #
+NB: This project is forked from Tarmo's project with a minimal user management system.
+
+TODO:
+* Add User management
+* Add User roles
+* Clean up the passport and user association step in UserController.create
+
 ### Why?
 Modern web applications has separated front- and backend sides to use. This boilerplate present one way to make
 <em>your</em> application which have fully separated back- and frontend sides.

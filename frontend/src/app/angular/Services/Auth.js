@@ -94,6 +94,21 @@
                         },
 
                         /**
+                         * Registers a new user and returns successful user JSON object
+                         *
+                         * @param   {*} credentials - User 
+                         *
+                         * @returns {*|Promise}
+                         */
+                        register: function(credentials) {
+                            return $http
+                                .post(BackendConfig.url + '/user', credentials, {withCredentials: true})
+                                .success(function(response) {
+                                    Storage.set('auth_token', JSON.stringify(response));
+                                });
+                        },
+
+                        /**
                          * The backend doesn't care about logouts, delete the token and you're good to go.
                          *
                          * Should we still make logout process to backend side?

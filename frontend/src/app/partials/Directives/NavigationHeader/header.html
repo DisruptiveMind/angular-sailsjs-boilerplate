@@ -15,23 +15,25 @@
                     <a href="#" data-ui-sref="anon.about">About</a>
                 </li>
 
-                <li
-                    data-ui-sref-active="active"
-                    data-ng-show="auth.isAuthenticated()"
-                >
+                <li data-ui-sref-active="active"
+                    data-ng-show="auth.isAuthenticated()" >
                     <a href="#" data-ui-sref="example.books">Examples</a>
                 </li>
 
                 <li class="pull-right"
-                    data-ng-show="auth.isAuthenticated()"
-                >
+                    data-ng-show="auth.isAuthenticated()" >
                     <a href="#" data-ng-click="logout()">Logout</a>
                 </li>
 
                 <li class="pull-right"
                     data-ui-sref-active="active"
-                    data-ng-show="!auth.isAuthenticated()"
-                >
+                    data-ng-show="!auth.isAuthenticated()" >
+                    <a href="#" data-ui-sref="anon.register">Register</a>
+                </li>
+                
+                <li class="pull-right"
+                    data-ui-sref-active="active"
+                    data-ng-show="!auth.isAuthenticated()" >
                     <a href="#" data-ui-sref="anon.login">Login</a>
                 </li>
             </ul>

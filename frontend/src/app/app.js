@@ -92,6 +92,11 @@ angular.module('frontend')
                         templateUrl: '/frontend/login/login.html',
                         controller: 'LoginController'
                     })
+                    .state('anon.register', {
+                        url: '/register',
+                        templateUrl: '/frontend/register/register.html',
+                        controller: 'RegisterController'
+                    })
                 ;
 
                 // Routes that needs authenticated user
